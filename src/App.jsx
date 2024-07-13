@@ -71,19 +71,13 @@ function App() {
 
   const handleEdit = (id, updatedTitle, updatedBody) => {
     const datetime = format(new Date(), "MMMM dd, yyyy pp");
-    setPosts(
-      posts.map((post) =>
-        post.id === id
-          ? { ...post, title: updatedTitle, datetime, body: updatedBody }
-          : post
-      )
-    );
+    setPosts(posts.map(post => post.id === id ? { ...post, title: updatedTitle, datetime, body: updatedBody } : post));
     navigate(`/post/${id}`);
   };
 
   const EditPost = () => {
     const { id } = useParams();
-    const post = posts.find((post) => post.id.toString() === id);
+    const post = posts.find(post => post.id.toString() === id);
     const [title, setTitle] = useState(post ? post.title : "");
     const [body, setBody] = useState(post ? post.body : "");
 
@@ -110,13 +104,14 @@ function App() {
               </div>
               <div className="title2">
                 <label htmlFor="postBody">Body:</label>
-                <textarea 
+                <textarea
                   id="postBody"
                   required
                   value={body}
                   onChange={(e) => setBody(e.target.value)}
                 />
               </div>
+              <button className="update" type="submit">Update Post</button>
               <button className="cancel" type="button" onClick={() => navigate(`/post/${id}`)}>
                 Cancel
               </button>
