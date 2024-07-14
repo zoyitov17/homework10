@@ -27,7 +27,7 @@ function App() {
     async function fetchPosts() {
       try {
         const response = await api.get("/posts");
-        dispatch(fetchPost(response.data))
+        dispatch(fetchPost(response.data));
       } catch (error) {
         console.error(error.message);
       }

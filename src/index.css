@@ -38,7 +38,8 @@ body {
   box-shadow: 0px 0px 15px gray;
 }
 
-.Header, .Footer {
+.Header,
+.Footer {
   width: 100%;
   background-color: #66d8f5;
   padding: 1rem;
@@ -102,7 +103,7 @@ body {
   padding: 1rem;
 }
 
-.Nav li:hover, 
+.Nav li:hover,
 .Nav li:focus {
   padding: 1rem;
 }
@@ -112,20 +113,24 @@ body {
   text-decoration: none;
 }
 
-.Nav li:hover, 
-.Nav li:focus, 
-.Nav li:hover a, 
-.Nav li:focus a  {
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
   background-color: #eee;
   color: #333;
 }
 
-.Nav li:hover a, 
+.Nav li:hover a,
 .Nav li:focus a {
   cursor: pointer;
 }
 
-.Home, .NewPost, .PostPage, .About, .Missing {
+.Home,
+.NewPost,
+.PostPage,
+.About,
+.Missing {
   width: 100%;
   flex-grow: 1;
   padding: 1rem;
@@ -143,7 +148,7 @@ body {
   text-decoration: none;
 }
 
-.Home .post a, 
+.Home .post a,
 .Home .post a:visited {
   color: #000;
 }
@@ -174,7 +179,7 @@ body {
   margin-top: 1rem;
 }
 
-.newPostForm input[type='text'], 
+.newPostForm input[type='text'],
 .newPostForm textarea {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -200,8 +205,10 @@ body {
   cursor: pointer;
 }
 
-.Missing h2, .PostPage h2, 
-.Missing p, .PostPage p {
+.Missing h2,
+.PostPage h2,
+.Missing p,
+.PostPage p {
   margin-bottom: 1rem;
 }
 
@@ -240,10 +247,10 @@ body {
     text-align: right;
   }
 
-  .Nav li:hover, 
-  .Nav li:focus, 
-  .Nav li:hover a, 
-  .Nav li:focus a  {
+  .Nav li:hover,
+  .Nav li:focus,
+  .Nav li:hover a,
+  .Nav li:focus a {
     background-color: #eee;
     color: #333;
   }
@@ -252,7 +259,7 @@ body {
     width: 50%;
     padding: .5rem 0;
   }
- 
+
   .searchForm input[type="text"] {
     margin-left: 0.5rem;
   }
