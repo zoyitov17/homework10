@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
@@ -87,53 +83,6 @@ body {
   padding: 0.25rem;
   border-radius: 0.25rem;
   outline: none;
-}
-
-.title1{
-  width: 100%;
-  height: 40px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  
-}
-
-.title1 input {
-  width: 80%;
-  height: 100%;
-  margin-left: 10px;
-  padding-left: 10px;
-  font-size: 16px;
-  border: 1.5px solid black;
-}
-
-.title2 {
-  margin-top: 20px;
-
-  width: 100%;
-}
-
-.title2 textarea {
-  width: 80%;
-  height: 100%;
-
-}
-
-.cancel{
-  width: 150px;
-  height: 40px;
-  margin-top: 20px;
-  background-color: yellow;
-  border: none;
-  margin-left: 10px;
-}
-.update {
-  width: 150px;
-  height: 40px;
-  margin-top: 20px;
-  background-color: green;
-  color: white;
-  border: none;
 }
 
 .searchForm label {
